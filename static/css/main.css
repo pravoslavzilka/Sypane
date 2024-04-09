@@ -1,4 +1,8 @@
 
+body{
+    font-family: baskerville, serif !important;
+}
+
 .links-items {
     padding-right:10px;
     padding-left:10px;
@@ -93,4 +97,8 @@
    	border-radius:6px;
    	-moz-border-radius:6px;
    	font-family:Calibri;
+}
+
+header {
+    font-size:22px;
 }
