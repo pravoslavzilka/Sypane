@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+
+{% block title %} Sypané vankúše {% endblock title %}
+
+{% block content %}
+
+	   <style>
+        .btn-block {
+          margin-top:20px;
+          font-size: 80%;
+          border-radius: 5rem;
+          letter-spacing: .1rem;
+          font-weight: bold;
+          padding: 1rem;
+          transition: all 0.2s;
+        }
+
+        @media only screen and (max-width: 1200px) {
+          .main-img {
+            width: 100%;
+          }
+          .type-card {
+            max-height:400px;
+          }
+
+        }
+        @media only screen and (min-width: 1200px) {
+          .main-img {
+            width: 100%;
+          }
+          .type-card {
+            max-height:300px;
+          }
+        }
+        @media only screen and (max-width: 760px) {
+          .type-card{
+            margin-top:40px;
+          }
+        }
+
+        @media only screen and (max-width: 500px) {
+          .main-img {
+            width: 100%;
+          }
+        }
+
+ 
+
+
+
+
+    </style>
+
+
+
+    <div class="container-fluid" style=" width:80%;margin-top:100px;">
+        <div class="row">
+
+            <div  class="book-list col-md-8 col-lg-8 col-sm-12 col-xs-12">
+
+                <img class="main-img" id="picture" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg" />
+
+
+                <div class="row">
+                	<span><a onclick="view_photo('test')"><img class="main-img" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg" height="70" width="100" />	</a></span>
+                	<span><img class="main-img" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg" height="70" width="100" />	</span>
+                	<span><img class="main-img" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg" height="70" width="100" />	</span>
+                	
+                </div>	
+
+
+                <div class="bg-light" style="margin-top: 40px;">
+                    <h2 style="padding-top:20px;">Grafika Banská akdémia </h2>
+                    <p>
+
+
+Predstavujeme vám grafiku November '89, ktorú sme v rámci nášho projektu Mladí proti fašizmu vydali pri príležitosti výročia Nežnej revolúcie. Print je pripomienkou jednej z najvýznamnejších udalostí našich novodobých dejín a následného nástupu slobody a demokracie. Pripomíname si ním taktiež fakt, že sloboda nie je samozrejmosťou ani štandardom. O slobodu sa treba aktívne usilovať.
+<br/><br/>
+V občianskom združení Mladí dlhodobo vyvíjame aktivity zamerané na podporu demokracie, boja proti extrémizmu a radikalizácii.
+<br/><7r/>
+Len pred poslednými voľbami sme zrealizovali štyri desiatky prednášok na stredných školách. Vlakom sme spoluprepravili viac ako šesť stoviek mladých voličov z Prahy a Brna naspäť domov a vytvorili sme kampaň, ktorá oslovila milióny účtov.
+<br/><br/>
+                   </p>
+                </div>
+
+            </div>
+
+
+
+            <div class="card  col-md-4 col-lg-4 col-sm-12 col-xs-12 type-card">
+                <div  class=" type-card card-body my-3 py-3 ">
+                    <h2 class="display-5">Zaježovské vankúše</h2>
+                    <p style="font-size: 17px;">Prírodné vankúše z ovčej vlny</p>
+
+                    <hr style="background-color:black;margin-top:40px;"/>
+
+                    <form style="">
+                        <div class="row">
+                            <label class="col-8">Množstvo</label>
+                            <input type="number" value="1" class="col-3 form-control" />
+                        </div>
+                        
+                    </form>
+                    <button onclick="view_photo('hkgz')" class="btn btn-lg btn-dark btn-block text-uppercase">Pridať do košíka</button>
+                </div>
+                
+
+        </div>
+    </div>
+
+    <div style="margin-bottom:200px;">
+
+    </div>
+
+
+ <script>
+	
+	function view_photo(info) {
+
+		var mainImage = document.getElementById('picture');
+		mainImage.src = 'https://www.pliesovce.sk/portals_pictures/i_001577/i_1577767.jpg';
+	}
+
+</script>   
+
+{% endblock content %}
