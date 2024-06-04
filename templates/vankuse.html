@@ -15,36 +15,106 @@
           transition: all 0.2s;
         }
 
+
+        .main-container {
+			width:80%;
+			margin-top:100px;"
+		}
+
+
         @media only screen and (max-width: 1200px) {
-          .main-img {
-            width: 100%;
-          }
-          .type-card {
-            max-height:400px;
-          }
+	          .main-img {
+				 width: 100%;
+			}
+
+			.main-container {
+				width:80%;
+				margin-top:50px;"
+			}
+
+			 .bottom-img {
+
+	        	height: 50px;
+	        	width: 80px;
+	        }
+
+	          .type-card {
+	            max-height:400px;
+	          }
 
         }
+
+
         @media only screen and (min-width: 1200px) {
-          .main-img {
-            width: 100%;
-          }
-          .type-card {
-            max-height:300px;
-          }
-        }
-        @media only screen and (max-width: 760px) {
-          .type-card{
-            margin-top:40px;
-          }
+	          .main-img {
+				 width: 100%;
+			}
+
+			 .bottom-img {
+
+	        	height: 60px;
+	        	width: 100px;
+	        }
+	          .type-card {
+	            max-height:300px;
+	          }
+	        }
+
+	    @media only screen and (max-width: 1000px) {
+	    	.main-container {
+				width:100%;
+				margin-top:40px;"
+			}
+
+	    }	
+
+
+	    @media only screen and (max-width: 770px) {
+	          .type-card{
+	            margin-top:40px;
+	          }
+
+	          .bottom-img {
+
+	        	height: 40px;
+	        	width: 75px;
+	        }
+
+		    .main-container {
+				width:90%;
+				margin-top:20px;"
+			}
+
         }
 
         @media only screen and (max-width: 500px) {
           .main-img {
             width: 100%;
           }
+
+
+           .main-container {
+				width:100%;
+				margin-top:20px;"
+			}
+
+			.bottom-img {
+
+	        	height: 30px;
+	        	width: 55px;
+	        }
+
         }
 
- 
+       
+
+ 		img {
+		    object-fit: cover;
+		}
+
+
+
+		
 
 
 
@@ -53,35 +123,34 @@
 
 
 
-    <div class="container-fluid" style=" width:80%;margin-top:100px;">
+    <div class="container-fluid main-container"  >
         <div class="row">
 
             <div  class="book-list col-md-8 col-lg-8 col-sm-12 col-xs-12">
-
+            	<div class="img-container ">	
                 <img class="main-img" id="picture" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg" />
+            </div>
 
 
-                <div class="row">
-                	<span><a onclick="view_photo('test')"><img class="main-img" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg" height="70" width="100" />	</a></span>
-                	<span><img class="main-img" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg" height="70" width="100" />	</span>
-                	<span><img class="main-img" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg" height="70" width="100" />	</span>
+                <div class="row" style="margin-left:5%;margin-top: 10px;">
+                	<span ><a  onclick="view_photo('https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg')"><img class="bottom-img" class="main-img" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg"  />	</a></span>
+
+
+                	<span style="margin-left:10px;"><a  onclick="view_photo('https://www.pliesovce.sk/portals_pictures/i_001577/i_1577767.jpg')"><img class="bottom-img" class="main-img" src="https://www.pliesovce.sk/portals_pictures/i_001577/i_1577767.jpg"  />	</a></span>
+
+
+                	<span style="margin-left:10px;"><img class="bottom-img"  src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg"/>	</span>
+
+
+                	<span  style="margin-left:10px;"><img class="bottom-img" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg"/>	</span>
+
+
+                	<span  style="margin-left:10px;"><img class="bottom-img" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg" />	</span>
                 	
                 </div>	
 
 
-                <div class="bg-light" style="margin-top: 40px;">
-                    <h2 style="padding-top:20px;">Grafika Banská akdémia </h2>
-                    <p>
-
-
-Predstavujeme vám grafiku November '89, ktorú sme v rámci nášho projektu Mladí proti fašizmu vydali pri príležitosti výročia Nežnej revolúcie. Print je pripomienkou jednej z najvýznamnejších udalostí našich novodobých dejín a následného nástupu slobody a demokracie. Pripomíname si ním taktiež fakt, že sloboda nie je samozrejmosťou ani štandardom. O slobodu sa treba aktívne usilovať.
-<br/><br/>
-V občianskom združení Mladí dlhodobo vyvíjame aktivity zamerané na podporu demokracie, boja proti extrémizmu a radikalizácii.
-<br/><7r/>
-Len pred poslednými voľbami sme zrealizovali štyri desiatky prednášok na stredných školách. Vlakom sme spoluprepravili viac ako šesť stoviek mladých voličov z Prahy a Brna naspäť domov a vytvorili sme kampaň, ktorá oslovila milióny účtov.
-<br/><br/>
-                   </p>
-                </div>
+                
 
             </div>
 
@@ -108,6 +177,20 @@ Len pred poslednými voľbami sme zrealizovali štyri desiatky prednášok na st
         </div>
     </div>
 
+    <div class="bg-light" style="margin-top: 40px;">
+                    <h2 style="padding-top:20px;">Grafika Banská akdémia </h2>
+                    <p>
+
+
+Predstavujeme vám grafiku November '89, ktorú sme v rámci nášho projektu Mladí proti fašizmu vydali pri príležitosti výročia Nežnej revolúcie. Print je pripomienkou jednej z najvýznamnejších udalostí našich novodobých dejín a následného nástupu slobody a demokracie. Pripomíname si ním taktiež fakt, že sloboda nie je samozrejmosťou ani štandardom. O slobodu sa treba aktívne usilovať.
+<br/><br/>
+V občianskom združení Mladí dlhodobo vyvíjame aktivity zamerané na podporu demokracie, boja proti extrémizmu a radikalizácii.
+<br/><7r/>
+Len pred poslednými voľbami sme zrealizovali štyri desiatky prednášok na stredných školách. Vlakom sme spoluprepravili viac ako šesť stoviek mladých voličov z Prahy a Brna naspäť domov a vytvorili sme kampaň, ktorá oslovila milióny účtov.
+<br/><br/>
+                   </p>
+                </div>
+
     <div style="margin-bottom:200px;">
 
     </div>
@@ -115,10 +198,10 @@ Len pred poslednými voľbami sme zrealizovali štyri desiatky prednášok na st
 
  <script>
 	
-	function view_photo(info) {
+	function view_photo(urlPhoto) {
 
 		var mainImage = document.getElementById('picture');
-		mainImage.src = 'https://www.pliesovce.sk/portals_pictures/i_001577/i_1577767.jpg';
+		mainImage.src = urlPhoto;
 	}
 
 </script>   
