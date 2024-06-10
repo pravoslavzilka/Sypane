@@ -13,5 +13,10 @@ def pillows():
     return render_template("vankuse.html")
 
 
+@app.route("/pelety")
+def pelety():
+    return render_template("pelety.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)

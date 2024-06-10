@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% block title %} Sypané vankúše {% endblock title %}
+{% block title %} Sypané Pelety {% endblock title %}
 
 {% block content %}
 
@@ -119,6 +119,10 @@
 		    object-fit: cover;
 		}
 
+		.points-bullet {
+		    font-size:19px;
+		}
+
 
 
 		
@@ -165,10 +169,10 @@
 
             <div class="card  col-md-4 col-lg-4 col-sm-12 col-xs-12 type-card">
                 <div  class=" type-card card-body my-3 py-3 ">
-                    <h2 class="display-5">Zaježovské vankúše</h2>
-                    <p style="font-size: 17px;">Prírodné vankúše z ovčej vlny</p>
+                    <h2 class="display-5">Pelety z ovčej vlny</h2>
+                    <p style="font-size: 17px;">Prírodné hnojivo pre rastliny</p>
 
-                    <h3>30€</h3>
+                    <h3>5€</h3>
 
                     <hr style="background-color:black;margin-top:40px;"/>
 
@@ -191,15 +195,95 @@
     		<p>
 
                 <h3 style="padding-top:30px;">Popis</h3>
-                Vankúše vyrobené z ovčej vlny a angínu o rozmeroch 40cm*40cm. Vnútro vankúša je vyrobené zo spracovanej ovčej vlny. Obal vankúša je vyrobený z angínu. Na obale je našitý zips aby sa po čase mohla vlna doplniť (vlnu na doplnenie pridávame ku každému vankúšu).
+            <p>Pelety je výrobok z neopratej ovčej vlny, ktorá je zomletá a tlakom vyformovaná do drobných peliet. Pelety sa následne používajú ako univerzálne hnojivo. Efekty a výhody ovčieho hnojiva:</p>
+                <ul >
+                    <li><strong class="points-bullet">Bohaté na živiny</strong> - Pre konkrétne živiny pozrite tabuľku nižšie. </li>
+
+                    <li><strong class="points-bullet">Dlhodobý efekt</strong> - Živiny z pelliet sa rozkladajú postupne v priebehu jednej sezóny. Vedia
+tak dodávať potrebné živiny rovnomerne počas celého roka.</li>
+                    <li><strong class="points-bullet">Nepredstavujú hrozbu</strong> - ako 100% prírodné hnojivo nepredstavujú ekologickú hrozbu - zanmená že sa nedá pôda hnojivom otráviť.</li>
+                    <li><strong class="points-bullet">Udržujú vlhkosť</strong> - ovčia vlna ako materiál vie zadržať vodu až 5-násobok svojej
+vlastnej hmotnosti. To sa prejaví v menšej potrebe polievať rastliny, a teda môže výrazne pomôcť počas suchých období. </li>
+                    <li><strong class="points-bullet">Prevzdušňujú pôdu</strong> - Vlnené pellety sa vodou zväčšujú, čím pomáhajú zvýšiť pórozitu (prevzdušnenie) v pôde čo pomáha rastu koreňov.</li>
+                    <li><strong class="points-bullet">Odpudzujú živočíchov</strong> - Pre svoj ovčí pach vie vlna ako hnojivo odpudzovať slimákov, napríklad v jahodovom záhone.</li>
+
+                </ul>
 
 				<br/><br/>
-                <h3>Kontext</h3>
-				V občianskom združení Mladí dlhodobo vyvíjame aktivity zamerané na podporu demokracie, boja proti extrémizmu a radikalizácii.
-				<br/><7r/>
-				Len pred poslednými voľbami sme zrealizovali štyri desiatky prednášok na stredných školách. Vlakom sme spoluprepravili viac ako šesť stoviek mladých voličov z Prahy a Brna naspäť domov a vytvorili sme kampaň, ktorá oslovila milióny účtov.
+                <h3>Živiny</h3>
+				 <table class="table">
+                  <thead>
+                    <tr>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">Dusík </td>
+                      <td>≈ 9%</td>
+                      <td>Horčik</td>
+                      <td>≈ 0,05 %</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Síra</td>
+                      <td>1,8-2 %</td>
+                      <td>Fosfor</td>
+                      <td>0,15-0,17 %</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Oxid draselný</td>
+                      <td>4-6 %</td>
+                      <td>Organické látky</td>
+                      <td>≈ 79%</td>
+                    </tr>
+                  <tr>
+                      <td scope="row">pH</td>
+                      <td>≈ 9 </td>
+
+                    </tr>
+                  </tbody>
+                </table>
 				<br/><br/>
-            </p>
+               <h3>Dávkovanie</h3>
+            <table class="table">
+                  <thead>
+                    <tr>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">Ovocie </td>
+                      <td>1 L peliet na 0,4 m2</td>
+                      <td> </td>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Zelenina</td>
+                      <td>1 L peliet na 0,4 m2</td>
+                      <td> </td>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Okrasné rastliny</td>
+                      <td>0,2 L peliet na 2,5L zeminy</td>
+                      <td> </td>
+                      <td> </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+            <p></p>
+            <br/><br/>
+                <h3>Výskum</h3>
+            <p>Zozbierané výskumy a výsledky z nich ohľadom vplyvu peliet z ovčej vlny na pôdu a rast rastlín. </p>
+            <a href="{{ url_for('static', filename='files/pelety.pdf') }}" class="row" style="margin-left:10px;" download>
+                <img height="30" src="{{ url_for('static', filename='images/file.png') }}" />
+                <label style="margin-left:5px;margin-top:5px;">Vysledky_sypane.pdf</label>
+            </a>
+            <br/><br/>
     	</div>	
                     
                     
