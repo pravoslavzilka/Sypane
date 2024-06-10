@@ -36,7 +36,7 @@
 
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light" >
-		  <a style="margin-left:20%" class="navbar-brand" href="#"><img height="70" src="{{ url_for('static', filename='images/sypane.png') }}" alt="PyCon 2022" /></a>
+		  <a style="margin-left:20%" class="navbar-brand" href="{{ url_for('index') }}"><img height="70" src="{{ url_for('static', filename='images/sypane.png') }}" alt="PyCon 2022" /></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
@@ -47,7 +47,7 @@
 				<a class="nav-link" href="#">Vankúše <span class="sr-only">(current)</span></a>
 			  </li>
 			  <li class="nav-item active" style="margin-left:12%">
-				<a class="nav-link" href="#">Pelety <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="{{ url_for('pelety') }}">Pelety <span class="sr-only">(current)</span></a>
 			  </li>
 			  <li class="nav-item active" style="margin-left:12%">
 				<a class="nav-link" href="#">Vízia<span class="sr-only">(current)</span></a>
