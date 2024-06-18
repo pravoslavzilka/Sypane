@@ -9,8 +9,24 @@
         	img {
 		    object-fit: cover;
 		}
-
-		@media only screen and (max-width: 600px) {
+        @media only screen and (min-width: 700px) {
+            .big-cont {
+            display:block;
+            }
+            .small-cont {
+            display:none;
+            }
+		}
+		@media only screen and (max-width: 700px) {
+            .big-cont {
+            display:none;
+            }
+            .small-cont {
+            display:block;
+            }
+            .text-head{
+                font-size:23px;
+            }
 
 
 		}
@@ -30,11 +46,11 @@
       <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
     </div>
 
-    <h2 style="margin-bottom:140px;margin-top:40px;" class="text-center">„Prinavraciame ovčiu vlnu naspäť do textilnej výroby“</h2>
+    <h2 style="margin-bottom:140px;margin-top:40px;" class="text-head text-center">„Prinavraciame ovčiu vlnu naspäť do textilnej výroby“</h2>
 
 
 
-    <div class="container-fluid">
+    <div class="container-fluid big-cont">
     <div class="row bg-light" >
       <div class="col-6  overflow-hidden">
         <div class="my-3 py-3" style="padding-left:20%;">
@@ -51,7 +67,7 @@
     </div>
 
 
-    <div class="container-fluid" style="margin-top:50px;">
+    <div class="container-fluid big-cont" style="margin-top:50px;">
     <div class="row " >
       
       <div class=" col-6 text-center overflow-hidden">
@@ -64,6 +80,45 @@
         <div class="my-3 py-3" style="padding-right:20%;">
           <h2 class="display-5">Úžitková vlna</h2>
           <p style="font-size:18px;">Vlna v horšom stave, ktorá sa nedá použiť ako výplň do vankúšov sa použije na pelety. Vlna sa v stroji tlakom a tepltou stlačí a vytvoria sa malé pelety, ktoré sa následne dajú použiť ako hnojivo do záhrady. Ovčia vlna obsahuje veľa žívin a má veľa pozitývnych vplyvov pre pôdu. Zároveň keďže sa jedná o organické hnojivo, nemôže sa ním pôda otráviť alebo znehodnotiť.  </p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+
+
+    <div class="container-fluid small-cont" >
+    <div class=" " >
+
+      <div class="  text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <img src="{{ url_for('static', filename='images/vankuse/IMG_6515.jpg') }}" style="width:95%; height:300px;" />
+        </div>
+      </div>
+
+      <div class=" col   overflow-hidden">
+        <div class="my-3 py-3" style="padding:30px;">
+          <h2 class="display-5">Textilná vlna</h2>
+          <p style="font-size:16px;">Vlnu z oviec Cigája, ktorá je v dobrom stave používame ako výplň do vankúšov. Vlne je vypratá a mechanicky spracovaná aby neobsahovala žiadne nečistoty. Vlnou potom plníme oliečky vyrobené z angínu. Angín je špeciálna látka, ktorá je dostatočne hrubá natoľko aby cez ňu vlna nezapáchala. </p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <div class="container-fluid small-cont" style="margin-top:50px;">
+    <div class=" " >
+
+      <div class="  text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <img src="{{ url_for('static', filename='images/pelety/IMG_6026.jpg') }}" style="width:95%; height:300px;" />
+        </div>
+      </div>
+
+      <div class=" col   overflow-hidden">
+        <div class="my-3 py-3" style="padding:30px;">
+          <h2 class="display-5">Úžitková vlna</h2>
+          <p style="font-size:16px;">Vlna v horšom stave, ktorá sa nedá použiť ako výplň do vankúšov sa použije na pelety. Vlna sa v stroji tlakom a tepltou stlačí a vytvoria sa malé pelety, ktoré sa následne dajú použiť ako hnojivo do záhrady. Ovčia vlna obsahuje veľa žívin a má veľa pozitývnych vplyvov pre pôdu. Zároveň keďže sa jedná o organické hnojivo, nemôže sa ním pôda otráviť alebo znehodnotiť.  </p>
         </div>
       </div>
 

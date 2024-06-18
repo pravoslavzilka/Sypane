@@ -17,6 +17,7 @@ def pillows():
 def pelety():
     return render_template("pelety.html")
 
+
 @app.route("/kontakt")
 def contact():
     return render_template("contact.html")
