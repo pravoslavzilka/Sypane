@@ -139,25 +139,25 @@
 
             <div  class="book-list col-md-8 col-lg-8 col-sm-12 col-xs-12">
             	<div class="img-container ">	
-                <img class="main-img" id="picture" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg" />
+                <img class="main-img" id="picture"  src="{{ url_for('static', filename='images/pelety/IMG_6026.jpg') }}" />
             </div>
 
 
                 <div class="row" style="margin-left:5%;margin-top: 10px;">
-                	<span ><a  onclick="view_photo('https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg')"><img class="bottom-img" class="main-img" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg"  />	</a></span>
+                	<span ><a  onclick="view_photo('{{ url_for('static', filename='images/pelety/IMG_6026.jpg') }}')"><img class="bottom-img" class="main-img" src="{{ url_for('static', filename='images/pelety/IMG_6026.jpg') }}"  />	</a></span>
 
 
-                	<span style="margin-left:10px;"><a  onclick="view_photo('https://www.pliesovce.sk/portals_pictures/i_001577/i_1577767.jpg')"><img class="bottom-img" class="main-img" src="https://www.pliesovce.sk/portals_pictures/i_001577/i_1577767.jpg"  />	</a></span>
+                	<span style="margin-left:10px;"><a  onclick="view_photo('{{ url_for('static', filename='images/pelety/IMG_6027.jpg') }}')"><img class="bottom-img" class="main-img" src="{{ url_for('static', filename='images/pelety/IMG_6027.jpg') }}"  />	</a></span>
 
 
-                	<span style="margin-left:10px;"><img class="bottom-img"  src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg"/>	</span>
+                    <span style="margin-left:10px;"><a  onclick="view_photo('{{ url_for('static', filename='images/pelety/IMG_6028.jpg') }}')"><img class="bottom-img"  src="{{ url_for('static', filename='images/pelety/IMG_6028.jpg') }}"/></a>	</span>
 
-
+                    <!--
                 	<span  style="margin-left:10px;"><img class="bottom-img" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg"/>	</span>
 
 
                 	<span  style="margin-left:10px;"><img class="bottom-img" src="https://www.majokmet.com/media/content/media/galleries/Slovenske%20rudohorie/004/hd.jpg" />	</span>
-                	
+                	-->
                 </div>	
 
 
